@@ -22,6 +22,7 @@ export const ColorModeSwitcher: React.FC<ColorModeSwitcherProps> = (props) => {
       color="current"
       marginLeft="2"
       onClick={toggleColorMode}
+      
       icon={<SwitchIcon />}
       aria-label={`Switch to ${text} mode`}
       {...props}
