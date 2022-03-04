@@ -8,8 +8,8 @@ import * as serviceWorker from "./serviceWorker"
 
 ReactDOM.render(
   <React.StrictMode>
-    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
     <HashRouter>
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <App />
     </HashRouter>
   </React.StrictMode>,
