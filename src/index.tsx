@@ -1,4 +1,4 @@
-import { ColorModeScript } from "@chakra-ui/react"
+import { ColorModeScript, theme } from "@chakra-ui/react"
 import * as React from "react"
 import ReactDOM from "react-dom"
 import { HashRouter } from "react-router-dom";
@@ -8,7 +8,7 @@ import * as serviceWorker from "./serviceWorker"
 
 ReactDOM.render(
   <React.StrictMode>
-    <ColorModeScript />
+    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
     <HashRouter>
       <App />
     </HashRouter>
