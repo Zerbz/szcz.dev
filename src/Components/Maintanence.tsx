@@ -6,6 +6,6 @@ export const Maintanence = () => (
     <div>
         <Container maxW='container.md'>Under development. Check back later.</Container>
         <br></br>
-        <RouteLink to="/files/MattSzczerbaResume.pdf" target="_blank" download><DownloadIcon mr="5px"/>Resume</RouteLink>
+        <Button><a href='/files/Matt Szczerba - Resume.pdf' download><DownloadIcon mr="5px"/>Resume</a></Button>
     </div> 
 )
