@@ -15,7 +15,7 @@ export const App = () => (
       <Grid minH="100vh" p={3}>
         <ColorModeSwitcher justifySelf="flex-end" />
           <VStack spacing={8}>     
-            {process.env.NODE_ENV == "production" ?  <Maintanence/> : <Home/>}
+            {process.env.NODE_ENV == "production" ?  <Maintanence/> : <Maintanence/>}
           </VStack>
       </Grid>
     </Box>
