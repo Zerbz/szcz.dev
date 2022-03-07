@@ -1,14 +1,11 @@
 import {ChakraProvider} from "@chakra-ui/react"
+import Maintanence from './Components/Maintanence'
+import Home from './Components/Home'
 
-import { Navigation } from "./Components/Nav/Navigation"
 import theme from './theme'
-import About from './Components/About/About'
-import Contact from './Components/Contact/Contact'
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Navigation/>
-    <About/>
-    <Contact/>
+    {process.env.NODE_ENV == "production" ?  <Maintanence/> : <Home/>}
   </ChakraProvider>
 )
 
