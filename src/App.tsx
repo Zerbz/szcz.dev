@@ -1,24 +1,14 @@
-import {
-  ChakraProvider,
-  Box,
-  VStack,
-  Grid
-} from "@chakra-ui/react"
-import { ColorModeSwitcher } from "./ColorModeSwitcher"
-import { Maintanence } from "./Components/Maintanence"
-import { Home } from "./Components/Home"
-import theme from './theme'
+import {ChakraProvider} from "@chakra-ui/react"
 
+import { Navigation } from "./Components/Nav/Navigation"
+import theme from './theme'
+import About from './Components/About/About'
+import Contact from './Components/Contact/Contact'
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh" p={3}>
-        <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>     
-            {process.env.NODE_ENV == "production" ?  <Maintanence/> : <Maintanence/>}
-          </VStack>
-      </Grid>
-    </Box>
+    <Navigation/>
+    <About/>
+    <Contact/>
   </ChakraProvider>
 )
 
