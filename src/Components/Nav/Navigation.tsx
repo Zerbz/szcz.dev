@@ -52,7 +52,7 @@ export function Navigation() {
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
-                <HashLink to={"#" + link}>{link}</HashLink>
+                <HashLink smooth to={"#" + link}>{link}</HashLink>
               ))}
             </HStack>
           </HStack>
@@ -65,7 +65,7 @@ export function Navigation() {
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
               {Links.map((link) => (
-                 <HashLink to={"#" + link}>{link}</HashLink>
+                 <HashLink smooth to={"#" + link}>{link}</HashLink>
               ))}
             </Stack>
           </Box>
