@@ -2,6 +2,9 @@ import {ChakraProvider, Container as ChakraContainer} from "@chakra-ui/react"
 import Maintanence from './Components/Maintanence'
 import Home from './Components/Home'
 import theme from './theme'
+import '@fontsource/fira-code/400.css'
+import '@fontsource/fira-code/700.css'
+import '@fontsource/open-sans/700.css'
 
 export const App = () => (
   <ChakraProvider theme={theme}>

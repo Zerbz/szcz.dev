@@ -10,6 +10,7 @@ import {
     Link,
     IconButton,
     useColorModeValue,
+    Divider,
   } from '@chakra-ui/react';
   import { SiGithub, SiLinkedin, SiMedium } from 'react-icons/si';
   import { DownloadIcon } from '@chakra-ui/icons';
@@ -17,14 +18,31 @@ import {
   export default function About() {
     return (
     <div id="About">
-        <Box p={4}>
+        <Box>
             <VStack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
-            <Heading fontSize={'3xl'}>Meow</Heading>
+            <Divider
+                width={{ sm: "70%", xl: "35%" }}
+                mt="15px"
+                mb="10px"
+                bg="#f56565"
+                padding="1px"
+                />
+            <Heading textAlign={'center'} size="2xl">About</Heading>
+            <Divider
+            width={{ sm: "70%", xl: "35%" }}
+              mt="15px"
+              mb="10px"
+              bg="#f56565"
+              padding="1px"
+            />
+            <br/>
+            <br/>
+            <br/>
             <Image
               borderRadius='full'
               boxSize='150px'
               src='/files/brenda.png'
-              alt='Dan Abramov'
+              alt='Brenda'
             />
             <HStack align={'top'}>
                     <Box color={'red.400'} px={15}>
@@ -75,27 +93,15 @@ import {
               Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow 
               Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow 
             </Container>
-            </VStack>
-    
-            <Container maxW={'6xl'} mt={10}>
-            <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
-                
-            </SimpleGrid>
-            </Container>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <Divider/>
+            </VStack>                    
         </Box>
       </div>
     );
   }
-
-
-  {/* {features.map((feature) => (
-                <HStack key={feature.id} align={'top'}>
-                    <Box color={'green.400'} px={2}>
-                    <Icon as={CheckIcon} />
-                    </Box>
-                    <VStack align={'start'}>
-                    <Text fontWeight={600}>{feature.title}</Text>
-                    <Text color={'gray.600'}>{feature.text}</Text>
-                    </VStack>
-                </HStack>
-                ))} */}

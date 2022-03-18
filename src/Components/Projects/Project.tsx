@@ -8,7 +8,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 
-export default function Diploma() {
+export default function Project() {
   return (
     <Center py={6}>
       <Box
