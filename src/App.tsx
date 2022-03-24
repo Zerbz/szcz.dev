@@ -4,7 +4,7 @@ import Home from './Components/Home'
 import theme from './theme'
 import '@fontsource/fira-code/400.css'
 import '@fontsource/fira-code/700.css'
-import '@fontsource/open-sans/700.css'
+import '@fontsource/bungee/400.css'
 
 export const App = () => (
   <ChakraProvider theme={theme}>

@@ -35,7 +35,7 @@ export default function Title() {
           <Heading
             fontWeight={200}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-            fontFamily={'body'}
+            fontFamily={'heading'}
             lineHeight={'180%'}>
             <Typist cursor={cursorProps} onTypingDone={complete}>
               <Text as={'span'}>Matt </Text>

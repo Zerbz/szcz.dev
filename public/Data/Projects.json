@@ -1,0 +1,156 @@
+{
+    "Projects": [{
+        "organization": "Environment & Climate Change Canada",
+        "hashlink": "eccc",
+        "projects":[{
+                    "img":{
+                        "src": "/files/Canada_150.png",
+                        "b": "200px",
+                        "h": "150px",
+                        "w": "175px",
+                        "l": "22%",
+                        "t": ""
+                    },
+                    "title": "MSAPR",
+                    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "url": "",
+                    "repo": ""
+                },
+                {
+                    "img":{
+                        "src": "/files/ATM.png",
+                        "b": "200px",
+                        "h": "350px",
+                        "w": "350px",
+                        "l": "22%",
+                        "t": "10%"
+                    },
+                    "title": "ATM",
+                    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "url": "",
+                    "repo": ""
+                },
+                {
+                    "img":{
+                        "src": "/files/Canada_150.png",
+                        "b": "200px",
+                        "h": "150px",
+                        "w": "175px",
+                        "l": "22%",
+                        "t": ""
+                    },
+                    "title": "GHG",
+                    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "url": "",
+                    "repo": ""
+                },
+                {
+                    "img":{
+                        "src": "/files/SAR.png",
+                        "b": "200px",
+                        "h": "250px",
+                        "w": "250px",
+                        "l": "22%",
+                        "t": ""
+                    },
+                    "title": "SAR",
+                    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "url": "https://species-registry.canada.ca/index-en.html",
+                    "repo": ""
+                }, 
+                {
+                    "img":{
+                        "src": "/files/CAM.png",
+                        "b": "200px",
+                        "h": "250px",
+                        "w": "250px",
+                        "l": "22%",
+                        "t": ""
+                    },
+                    "title": "CAM",
+                    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "url": "https://climate-change.canada.ca/climate-action-map/App/index?GOCTemplateCulture=en-CA",
+                    "repo": ""
+                },               
+                {
+                    "img":{
+                        "src": "/files/LUIS.png",
+                        "b": "200px",
+                        "h": "350px",
+                        "w": "350px",
+                        "l": "22%",
+                        "t": "5%"
+                    },
+                    "title": "LUIS",
+                    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                    "url": "",
+                    "repo": ""
+                }
+            ]
+        },
+        {
+            "organization": "Icarus Medical",
+            "hashlink": "icarus",
+            "projects":[{
+                "img":{
+                    "src": "/files/icarus-search.png",
+                    "b": "250px",
+                    "h": "350px",
+                    "w": "350px",
+                    "l": "22%",
+                    "t": "15%"
+                },
+                "title": "Icarus Medical",
+                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                "url": "https://www.icarusmed.ca/",
+                "repo": "https://github.com/Zerbz/icarus-frontend"
+            }]
+        },
+        {
+            "organization": "Mohawk College",
+            "hashlink": "mohawk",
+            "projects":[{
+                "img":{
+                    "src": "/files/fleet-portal.png",
+                    "b": "250px",
+                    "h": "350px",
+                    "w": "350px",
+                    "l": "22%",
+                    "t": "10%"
+                },
+                "title": "Fleet Portal",
+                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                "url": "",
+                "repo": "https://github.com/Zerbz/Fleet-Portal"
+            },
+            {
+                "img":{
+                    "src": "/files/hhs.png",
+                    "b": "250px",
+                    "h": "350px",
+                    "w": "350px",
+                    "l": "22%",
+                    "t": "10%"
+                },
+                "title": "Infectious Diseases Handbook",
+                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                "url": "https://www.sandboxsoftware.ca/projects/infectious-disease-handbook/",
+                "repo": ""
+            },
+            {
+                "img":{
+                    "src": "/files/iris.png",
+                    "b": "250px",
+                    "h": "350px",
+                    "w": "350px",
+                    "l": "22%",
+                    "t": "15%"
+                },
+                "title": "Iris Proof of Concept",
+                "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+                "url": "",
+                "repo": ""
+            }]      
+        }  
+    ]
+}

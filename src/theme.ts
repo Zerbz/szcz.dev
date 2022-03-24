@@ -76,7 +76,7 @@ const theme = extendTheme({
     })
   },
   fonts: {
-    heading: 'Fira Code, sans-serif',
+    heading: 'Bungee, sans-serif',
     body: 'Fira Code, sans-serif',
   },
   components:{

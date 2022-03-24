@@ -12,7 +12,7 @@ import {
     useColorModeValue,
     Divider,
   } from '@chakra-ui/react';
-  import { SiGithub, SiLinkedin, SiMedium } from 'react-icons/si';
+  import { SiGithub, SiLinkedin, SiDevDotTo } from 'react-icons/si';
   import { DownloadIcon } from '@chakra-ui/icons';
   
   export default function About() {
@@ -45,49 +45,49 @@ import {
               alt='Brenda'
             />
             <HStack align={'top'}>
-                    <Box color={'red.400'} px={15}>
-                      <Link href="https://www.linkedin.com/in/mszcz/" isExternal>
+                    <Box color={'black.400'} px={15}>
+                      <Link p={3} href="https://www.linkedin.com/in/mszcz/" isExternal>
                         <IconButton
                           aria-label="linkedin"
                           variant="ghost"
                           size="lg"
                           icon={<SiLinkedin size="28px" />}
                           _hover={{
-                            bg: 'blue.500',
-                            color: useColorModeValue('white', 'gray.700'),
+                            bg: '#f56565',
+                            color: useColorModeValue('white', 'black'),
                           }}
                           isRound
                         />
                       </Link>
-                      <Link href="https://github.com/Zerbz" isExternal>
+                      <Link p={3} href="https://github.com/Zerbz" isExternal>
                         <IconButton
                           aria-label="github"
                           variant="ghost"
                           size="lg"
                           icon={<SiGithub size="28px" />}
                           _hover={{
-                            bg: 'blue.500',
-                            color: useColorModeValue('white', 'gray.700'),
+                            bg: 'red.500',
+                            color: useColorModeValue('white', 'black'),
                           }}
                           isRound
                         />
                       </Link>
-                      <Link href="https://medium.com/@szcz" isExternal>
+                      <Link p={3} href="https://dev.to/szcz" isExternal>
                         <IconButton
-                          aria-label="medium"
+                          aria-label="dev.to"
                           variant="ghost"
                           size="lg"
-                          icon={<SiMedium size="28px" />}
+                          icon={<SiDevDotTo size="35px" />}
                           _hover={{
-                            bg: 'blue.500',
-                            color: useColorModeValue('white', 'gray.700'),
+                            bg: 'red.500',
+                            color: useColorModeValue('white', 'black'),
                           }}
                           isRound
                         />
                       </Link>
                     </Box>
                 </HStack>
-            <a href="/files/MattSzczerbaResumeWeb.pdf" target="_blank" download> <Button><DownloadIcon mr="5px"/>Resume</Button></a>
+            <Link href="/files/MattSzczerbaResumeWeb.pdf" isExternal download><Button><DownloadIcon mr="5px"/>Resume</Button></Link>
             <Container>
               I'm Brenda, and I'm cute, but I'm picky as shit. Meow Meow Meow Meow Meow
               Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow 

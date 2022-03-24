@@ -1,0 +1,155 @@
+{
+    "Timeline": [{
+            "img": {
+                "src": "/files/Canada_150.png",
+                "b": "250px",
+                "h": "200px",
+                "w": "200px",
+                "l": "22%",
+                "t": ""
+            },
+            "title": "Environment & Climate Change Canada",
+            "detail": "Full Stack Developer",
+            "dates": "2018 - 2019 (Co-op), 2020 - Present",
+            "tools":[{
+                        "tooltip": "C#",
+                        "icon": "SiCsharp"
+                    },
+                    {
+                        "tooltip": ".NET",
+                        "icon": "SiDotNet"
+                    },
+                    {
+                        "tooltip": "VueJS",
+                        "icon": "SiVueDotJs"
+                    },
+                    {
+                        "tooltip": "Docker",
+                        "icon": "SiDocker"
+                    },
+                    {
+                        "tooltip": "ELK",
+                        "icon": "SiElasticstack"
+                    },
+                    {
+                        "tooltip": "SQL",
+                        "icon": "SiMicrosoftsqlserver"
+                    },
+                    {
+                        "tooltip": "Azure Pipelines",
+                        "icon": "SiAzurepipelines"
+                    },
+                    {
+                        "tooltip": "Azure DevOps",
+                        "icon": "SiAzuredevops"
+                    }
+                ],
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "projects": "#eccc"
+        },{
+            "img": {
+                "src": "/files/mcmaster.png",
+                "b": "200px",
+                "h": "150px",
+                "w": "300px",
+                "l": "5%"
+            },
+            "title": "McMaster University",
+            "detail": "BTech - Software Engineering Technology. 3.8/4 GPA",
+            "dates": "2020 - Present, Expected Graduation 2024",
+            "tools":[],
+            "description": " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "projects": "#mac"
+        },
+        {
+            "img": {
+                "src": "/files/icarus.png",
+                "b": "150px",
+                "h": "150px",
+                "w": "300px",
+                "t": "5%"
+            },
+            "title": "Icarus Medical",
+            "detail": "Co-Founder / Developer",
+            "dates": "2019-2019",
+            "tools":[{
+                "tooltip": "React",
+                "icon": "SiReact"
+                },
+                {
+                    "tooltip": "Python",
+                    "icon": "SiPython"
+                },
+                {
+                    "tooltip": "NodeJS",
+                    "icon": "SiNodeDotJs"
+                },
+                {
+                    "tooltip": "Flask",
+                    "icon": "SiFlask"
+                },
+                {
+                    "tooltip": "PostgreSQL",
+                    "icon": "SiPostgresql"
+                },
+                {
+                    "tooltip": "Jest",
+                    "icon": "SiJest"
+                }
+            ],
+            "description": " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "projects": "#icarus"
+        },
+        {
+            "img": {
+                "src": "/files/mohawk.png",
+                "b": "150px",
+                "h": "150px",
+                "w": "300px",
+                "t": "10%"
+            },
+            "title": "Mohawk College",
+            "detail": "Advanced Diploma, Software Development - Honours Graduate",
+            "dates": "2017-2020",
+            "tools":[{
+                    "tooltip": "Python",
+                    "icon": "SiPython"
+                },
+                {
+                    "tooltip": "C#",
+                    "icon": "SiCsharp"
+                },
+                {
+                    "tooltip": ".NET",
+                    "icon": "SiDotNet"
+                },
+                {
+                    "tooltip": "Java",
+                    "icon": "SiJava"
+                },
+                {
+                    "tooltip": "React",
+                    "icon": "SiReact"
+                },
+                {
+                    "tooltip": "VueJS",
+                    "icon": "SiVueDotJs"
+                },
+                {
+                    "tooltip": "Swift",
+                    "icon": "SiSwift"
+                },
+                {
+                    "tooltip": "Laravel",
+                    "icon": "SiLaravel"
+                },
+                {
+                    "tooltip": "NodeJS",
+                    "icon": "SiNodeDotJs"
+                }
+            ],
+            "description": " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "projects": "#mohawk"
+        }
+    ]
+}

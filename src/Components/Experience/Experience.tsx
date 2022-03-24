@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import {
   Box,
   Center,
@@ -7,54 +6,121 @@ import {
   Stack,
   useColorModeValue,
   Spacer,
+  Image,
+  Tooltip,
+  Icon,
+  Wrap,
+  WrapItem,
+  Button,
 } from '@chakra-ui/react';
+import {
+  SiCsharp,
+  SiDotNet,
+  SiVueDotJs,
+  SiDocker,
+  SiElasticstack,
+  SiMicrosoftsqlserver,
+  SiAzurepipelines,
+  SiAzuredevops,
+  SiPython,
+  SiNodeDotJs,
+  SiReact,
+  SiFlask,
+  SiPostgresql,
+  SiLaravel,
+  SiJava,
+  SiSwift,
+  SiJest,
+} from "react-icons/si";
+import { useState, useEffect } from 'react';
+import { HashLink } from 'react-router-hash-link';
 
-export default function Experience() {
+const ECCC = [SiCsharp,SiDotNet,SiVueDotJs, SiDocker, SiElasticstack, SiMicrosoftsqlserver, SiAzurepipelines, SiAzuredevops];
+const Icarus = [SiReact,SiPython,SiNodeDotJs, SiFlask, SiPostgresql, SiJest]
+const Mohawk = [SiPython,SiCsharp, SiDotNet, SiJava, SiReact, SiVueDotJs, SiSwift, SiLaravel,SiNodeDotJs]
+
+export default function Experience({Data}) {
+  const [icons, setIcons] = useState(ECCC);
+  useEffect(()=>{
+    setIcons(getIcons(Data.title));
+  },[])
+
+
+
+  function getIcons(title){
+    switch(title){
+      case "Environment & Climate Change Canada":
+        return ECCC;
+      case "Icarus Medical":
+        return Icarus;
+      case "Mohawk College":
+        return Mohawk;
+      default:
+        return [];
+    }
+  }
+
   return (
-    <Center py={12}>
+    <Center>
       <Box
         maxW={'445px'}
         w={'full'}
-        bg={useColorModeValue('white', 'gray.900')}
         boxShadow={'2xl'}
         rounded={'md'}
         p={6}
         overflow={'hidden'}>
         <Box
-          h={'210px'}
-          bg={'gray.100'}
-          mt={-6}
-          mx={-6}
-          mb={6}
+          h={Data.img.b}
           pos={'relative'}>
-          <Image
-            src={
-              '/files/brenda.png'
-            }
-            layout={'fill'}
-          />
+        <Center>
+          <Image mt={Data.img.t} htmlWidth={Data.img.w} htmlHeight={Data.img.h} src={Data.img.src} alt="Canada"/>
+        </Center>
         </Box>
         <Stack>
-          <Text
-            color={'green.500'}
-            textTransform={'uppercase'}
-            fontWeight={800}
-            fontSize={'sm'}
-            letterSpacing={1.1}>
-            Blog
-          </Text>
           <Heading
             color={useColorModeValue('gray.700', 'white')}
-            fontSize={'2xl'}
-            fontFamily={'body'}>
-            Boost your conversion rate
+            fontSize={'md'}
+            fontFamily={'body'}
+            textAlign={'left'}>
+            {Data.title}
           </Heading>
-          <Text color={'gray.500'}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum.
+          <Heading
+            color={useColorModeValue('gray.700', 'white')}
+            fontSize={'md'}
+            fontFamily={'body'}
+            textAlign={'left'}>
+            {Data.detail}
+          </Heading>
+          <Heading
+            color={useColorModeValue('gray.700', 'white')}
+            fontSize={'md'}
+            fontFamily={'body'}
+            textAlign={'left'}>
+            {Data.dates}
+          </Heading>
+          <Box p={2} pt={25} >
+          <Center>
+            <Wrap fontSize={'3xl'}>
+              {Data.tools.map((tool, index) => (
+                <WrapItem key={index}>
+                <Tooltip label={tool.tooltip} fontSize="xl">
+                  <span>
+                    <Icon as={icons[index]} />
+                  </span>
+                </Tooltip>
+              </WrapItem>
+              ))}
+            </Wrap>
+          </Center>
+          </Box>
+          <Text fontFamily={'body'} color={'gray.500'} textAlign={'left'}>
+            {Data.description}
           </Text>
+          <HashLink hidden={Data.projects === "#mac"} smooth to={Data.projects} key={Data.projects}>        
+              <Button  w={'350px'}>
+               Projects 
+              </Button>
+          </HashLink>
         </Stack>
       </Box>
       <Spacer />

@@ -1,7 +1,31 @@
-import Diploma from "./Project"
-import { HStack,VStack, Divider, Heading } from "@chakra-ui/react"
+import Project from "./Project"
+import {VStack, Divider, Heading, Box} from "@chakra-ui/react"
+import { useState, useEffect } from 'react';
 
 export default function Projects() {
+    const [data, setData] = useState([]);
+
+    const getData=()=>{
+      fetch('/Data/Projects.json',{
+        headers : { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+         }
+      }
+      )
+        .then(function(response){
+          return response.json();
+        })
+        .then(function(myJson) {
+          setData(myJson.Projects)
+        });
+    }
+    useEffect(()=>{
+  
+      getData()
+  
+    },[])
+
     return (
         <div id="Projects">
             <VStack>
@@ -28,12 +52,14 @@ export default function Projects() {
                 <br/>
                 <br/>
                 <br/>
-                <Diploma/>
-                <HStack>
-                    <Diploma/>
-                    <Diploma/>
-                </HStack>
             </VStack>
+            <VStack align={"left"}>
+              {data.map((project, index) => (      
+                <Box key={index} p={'10px'}>
+                   <Project Data={project}/>
+                </Box>                
+              ))}   
+            </VStack>   
             <br/>
             <br/>
             <br/>

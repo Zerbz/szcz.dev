@@ -4,14 +4,35 @@ import Experience from "../Experience/Experience"
 import {Waypoint as Waypoint} from 'react-waypoint';
 import { MdWork } from 'react-icons/md'; 
 import { IoMdSchool } from 'react-icons/io'; 
-
-
-const steps = [{ label: "Exp 1" }, { label: "Exp 2" }, { label: "Exp 3" }, { label: "Exp 4" }, { label: "Exp 5" }, { label: "Exp 6" }]
+import { useState, useEffect } from 'react';
 
 export default function Timeline() {
   const { nextStep, prevStep, activeStep, setStep } = useSteps({
     initialStep: 0,
   })
+
+  const [data, setData] = useState([]);
+
+  const getData=()=>{
+    fetch('/Data/Timeline.json',{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    }
+    )
+      .then(function(response){
+        return response.json();
+      })
+      .then(function(myJson) {
+        setData(myJson.Timeline)
+      });
+  }
+  useEffect(()=>{
+
+    getData()
+
+  },[])
 
   return (
     <div id = "Timeline">
@@ -41,11 +62,11 @@ export default function Timeline() {
           <br/>
           <br/>
           <Steps orientation="vertical" activeStep={activeStep} onClickStep={(e)=>{setStep(e)}} checkIcon={(activeStep) % 2 === 0 ? MdWork : IoMdSchool } colorScheme={'red'}> 
-              {steps.map(({ label }, index) => (                   
-                  <Step width="100%" label={label} key={label} icon={(index + 1) % 2 === 0 ? MdWork : IoMdSchool}>            
+              {data.map(({ title }, index) => (                   
+                  <Step width="100%" label={title} key={title} icon={(index + 1) % 2 === 0 ? IoMdSchool : MdWork}>            
                       <Box pos='relative' right={(index + 1) % 2 === 0 ? "102%" : ""} height='45%'>             
-                          <Waypoint onEnter={activeStep === steps.length - 1 ? ()=>{} : nextStep} onLeave={activeStep === 0 || activeStep === steps.length - 1  ? ()=>{} : ()=>{}} bottomOffset={(index + 1) % 2 === 0 ? index + 1 * 750 : "80%"} fireOnRapidScroll={false} /> 
-                          <Experience/>    
+                          <Waypoint onEnter={activeStep === data.length - 1 ? ()=>{} : nextStep} onLeave={activeStep === 0 || activeStep === data.length - 1  ? ()=>{} : ()=>{}} bottomOffset={(index + 1) % 2 === 0 ? index + 1 * 750 : "80%"} fireOnRapidScroll={false} /> 
+                          <Experience Data={data[index]}/>    
                       </Box>   
                   </Step>
               ))}
