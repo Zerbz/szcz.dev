@@ -1,38 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.37acd41b.css",
-    "main.js": "/static/js/main.ffb09a0e.js",
-    "static/js/377.70c4048d.chunk.js": "/static/js/377.70c4048d.chunk.js",
+    "main.css": "/static/css/main.c72d4993.css",
+    "main.js": "/static/js/main.841c6a93.js",
+    "static/js/377.cc8ba47f.chunk.js": "/static/js/377.cc8ba47f.chunk.js",
     "static/media/fira-code-all-400-normal.woff": "/static/media/fira-code-all-400-normal.f040c6c2c35bd88d2ce8.woff",
     "static/media/fira-code-all-700-normal.woff": "/static/media/fira-code-all-700-normal.eca4358327bab9afc505.woff",
-    "static/media/open-sans-all-700-normal.woff": "/static/media/open-sans-all-700-normal.3499b9716301bd3c513c.woff",
+    "static/media/bungee-all-400-normal.woff": "/static/media/bungee-all-400-normal.61ca83d074e495e65ec1.woff",
     "static/media/fira-code-latin-400-normal.woff2": "/static/media/fira-code-latin-400-normal.512fb741699ee46e71c3.woff2",
     "static/media/fira-code-latin-700-normal.woff2": "/static/media/fira-code-latin-700-normal.fa95d924d7433b10321e.woff2",
-    "static/media/open-sans-cyrillic-ext-700-normal.woff2": "/static/media/open-sans-cyrillic-ext-700-normal.3c59ade8b77934a45b30.woff2",
-    "static/media/open-sans-latin-700-normal.woff2": "/static/media/open-sans-latin-700-normal.166dc5efb248e5752096.woff2",
-    "static/media/open-sans-latin-ext-700-normal.woff2": "/static/media/open-sans-latin-ext-700-normal.45e8e1ac313ddc44a973.woff2",
+    "static/media/bungee-latin-400-normal.woff2": "/static/media/bungee-latin-400-normal.daddcac6fe1a2454c842.woff2",
+    "static/media/bungee-latin-ext-400-normal.woff2": "/static/media/bungee-latin-ext-400-normal.7ec24d3fb778d0a7f8ac.woff2",
     "static/media/fira-code-cyrillic-ext-400-normal.woff2": "/static/media/fira-code-cyrillic-ext-400-normal.7c2a112ab30d0c9d36b9.woff2",
     "static/media/fira-code-cyrillic-ext-700-normal.woff2": "/static/media/fira-code-cyrillic-ext-700-normal.b203b48b424eb07dd3a7.woff2",
-    "static/media/open-sans-cyrillic-700-normal.woff2": "/static/media/open-sans-cyrillic-700-normal.1c275ed85d097d423a5a.woff2",
-    "static/media/open-sans-greek-700-normal.woff2": "/static/media/open-sans-greek-700-normal.8fe2fcd1cc0060a5abe8.woff2",
-    "static/media/open-sans-hebrew-700-normal.woff2": "/static/media/open-sans-hebrew-700-normal.5b6a72dd649c1ba5dd57.woff2",
-    "static/media/open-sans-vietnamese-700-normal.woff2": "/static/media/open-sans-vietnamese-700-normal.f7029b9ddd8d28129255.woff2",
     "static/media/fira-code-greek-700-normal.woff2": "/static/media/fira-code-greek-700-normal.e0524fc73f6bb6d02d94.woff2",
     "static/media/fira-code-greek-400-normal.woff2": "/static/media/fira-code-greek-400-normal.c20795eca5fc139c1f8a.woff2",
     "static/media/fira-code-latin-ext-400-normal.woff2": "/static/media/fira-code-latin-ext-400-normal.56da2b3c6dfb1f0328db.woff2",
     "static/media/fira-code-latin-ext-700-normal.woff2": "/static/media/fira-code-latin-ext-700-normal.ad92b14b94793bad40ac.woff2",
     "static/media/fira-code-cyrillic-400-normal.woff2": "/static/media/fira-code-cyrillic-400-normal.d422a2608bde11389a91.woff2",
     "static/media/fira-code-cyrillic-700-normal.woff2": "/static/media/fira-code-cyrillic-700-normal.e08b8ae839d9c26eff83.woff2",
+    "static/media/bungee-vietnamese-400-normal.woff2": "/static/media/bungee-vietnamese-400-normal.35a2efc8b99be71aebc4.woff2",
     "static/media/fira-code-greek-ext-400-normal.woff2": "/static/media/fira-code-greek-ext-400-normal.7b190f87f3b16cfe66f0.woff2",
     "static/media/fira-code-greek-ext-700-normal.woff2": "/static/media/fira-code-greek-ext-700-normal.70c1961c22d9fc18e899.woff2",
-    "static/media/open-sans-greek-ext-700-normal.woff2": "/static/media/open-sans-greek-ext-700-normal.6ec764fe61947b88ec49.woff2",
     "index.html": "/index.html",
-    "main.37acd41b.css.map": "/static/css/main.37acd41b.css.map",
-    "main.ffb09a0e.js.map": "/static/js/main.ffb09a0e.js.map",
-    "377.70c4048d.chunk.js.map": "/static/js/377.70c4048d.chunk.js.map"
+    "main.c72d4993.css.map": "/static/css/main.c72d4993.css.map",
+    "main.841c6a93.js.map": "/static/js/main.841c6a93.js.map",
+    "377.cc8ba47f.chunk.js.map": "/static/js/377.cc8ba47f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37acd41b.css",
-    "static/js/main.ffb09a0e.js"
+    "static/css/main.c72d4993.css",
+    "static/js/main.841c6a93.js"
   ]
 }

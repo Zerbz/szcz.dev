@@ -1,0 +1,166 @@
+{
+    "Projects": [{
+        "organization": "Environment & Climate Change Canada",
+        "hashlink": "eccc",
+        "projects":[{
+                    "img":{
+                        "src": "/files/ATM.png",
+                        "b": "175px",
+                        "h": "350px",
+                        "w": "350px",
+                        "l": "22%",
+                        "t": ""
+                    },
+                    "title": "ATM",
+                    "description": "ATM is a research and development project intended to explore Blazor for future use in regulatory applications. The project uses the Blazor Server framework, Ant Design Blazor, C#, and an Azure SQL Server DB to provide an all-in-one application monitoring system. I led a team of 11 students to the project's completion.",
+                    "url": "",
+                    "urlType": "Live",
+                    "repo": ""
+                },
+                {
+                    "img":{
+                        "src": "/files/Canada_150.png",
+                        "b": "175px",
+                        "h": "100px",
+                        "w": "125px",
+                        "l": "22%",
+                        "t": ""
+                    },
+                    "title": "GHG",
+                    "description": "The ECCC-GHG application is a comprehensive reporting tool used to track Green House Gases emitted by industry. The project’s stack includes C# and the proprietary SmartUI / United framework. My responsibilities also include product deployments up to production through an Azure build/release pipeline.",
+                    "url": "",
+                    "urlType": "Live",
+                    "repo": ""
+                },
+                {
+                    "img":{
+                        "src": "/files/Canada_150.png",
+                        "b": "175px",
+                        "h": "100px",
+                        "w": "125px",
+                        "l": "22%",
+                        "t": ""
+                    },
+                    "title": "MSAPR",
+                    "description": "MSAPR is a complex regulatory application that was developed to receive and monitor emissions data from the oil and gas industry. It features a full management system of an organization’s facilities, engines, turbines, and personnel. It was developed using C# and the proprietary SmartUI / United Framework.",
+                    "url": "",
+                    "urlType": "Live",
+                    "repo": ""
+                },
+                {
+                    "img":{
+                        "src": "/files/SAR.png",
+                        "b": "175px",
+                        "h": "250px",
+                        "w": "250px",
+                        "l": "22%",
+                        "t": ""
+                    },
+                    "title": "SAR",
+                    "description": "The Species at Risk (SAR) Registry is a Canada wide effort to provide public access to critical species related information. The SAR Registry frontend was developed using Vue and TypeScript and the backend infrastructure consists of a .NET service that syncs SQL views to Azure blob storage.",
+                    "url": "https://species-registry.canada.ca/index-en.html",
+                    "urlType": "Live",
+                    "repo": ""
+                }, 
+                {
+                    "img":{
+                        "src": "/files/CAM.png",
+                        "b": "175px",
+                        "h": "250px",
+                        "w": "250px",
+                        "l": "22%",
+                        "t": ""
+                    },
+                    "title": "CAM",
+                    "description": "The climate action map provides Canadians with an interactive way of finding climate projects in their area. It uses the Government of Canada’s open-source web mapping platform RAMP (Angular/JS) to display project data in an interactive format. CAM is an ASP.NET app, that uses the RAMP API to display custom query results.",
+                    "url": "https://climate-change.canada.ca/climate-action-map/App/index?GOCTemplateCulture=en-CA",
+                    "urlType": "Live",
+                    "repo": "https://github.com/fgpv-vpgf"
+                },               
+                {
+                    "img":{
+                        "src": "/files/LUIS.png",
+                        "b": "175px",
+                        "h": "350px",
+                        "w": "350px",
+                        "l": "22%",
+                        "t": ""
+                    },
+                    "title": "LUIS",
+                    "description": "Developed a chat bot prototype as part of a department initiative to incorporate machine learning and AI into current and future projects. The prototype was created using Microsoft’s LUIS AI and Azure Web App Bot frameworks. LUIS was integrated with the CAM project due to its use an Open Gov data set.",
+                    "url": "https://open.canada.ca/data/en/dataset/ee421d50-dffd-41fb-976c-5bbfec04b2dd",
+                    "urlType": "Data set",
+                    "repo": ""
+                }
+            ]
+        },
+        {
+            "organization": "Icarus Medical",
+            "hashlink": "icarus",
+            "projects":[{
+                "img":{
+                    "src": "/files/icarus-search.png",
+                    "b": "175px",
+                    "h": "350px",
+                    "w": "350px",
+                    "l": "22%",
+                    "t": ""
+                },
+                "title": "Icarus Medical",
+                "description": "Icarus Medical is a web application created to improve patient care by reducing specialist wait times in Canada. The front end was created with React / Ant Design and the backend API was developed using Python and Flask.",
+                "url": "https://www.icarusmed.ca/",
+                "urlType": "Live",
+                "repo": "https://github.com/Zerbz/icarus-frontend"
+            }]
+        },
+        {
+            "organization": "Mohawk College",
+            "hashlink": "mohawk",
+            "projects":[{
+                "img":{
+                    "src": "/files/fleet-portal.png",
+                    "b": "200px",
+                    "h": "350px",
+                    "w": "350px",
+                    "l": "22%",
+                    "t": ""
+                },
+                "title": "Fleet Portal",
+                "description": "Fleet portal is a Laravel application designed for drivers and dispatchers in the transportation industry. Its functionality includes fleet management, load tracking, driver tracking, file uploads, email notifications and route editing. I spent two years in the industry working as a dispatcher and always wished that a product like this was available to me. I brought this idea to life as my final capstone project at Mohawk College.",
+                "url": "",
+                "urlType": "Live",
+                "repo": "https://github.com/Zerbz/FleetPortal"
+            },
+            {
+                "img":{
+                    "src": "/files/hhs.png",
+                    "b": "200px",
+                    "h": "300px",
+                    "w": "300px",
+                    "l": "22%",
+                    "t": ""
+                },
+                "title": "Infectious Diseases Handbook",
+                "description": "Worked closely with a team of Infectious Diseases specialists at Hamilton Health Sciences to deliver a system that quickly distributes important information about infectious diseases. The application was built upon the open-source wiki platform BookStack which uses Laravel. This was delivered as part of a fifth semester software engineering course and was received exceptionally well by HHS. I continued the project as applied research in my final semester.",
+                "url": "https://www.sandboxsoftware.ca/projects/infectious-disease-handbook/",
+                "urlType": "Article",
+                "repo": ""
+            },
+            {
+                "img":{
+                    "src": "/files/iris.png",
+                    "b": "200px",
+                    "h": "350px",
+                    "w": "350px",
+                    "l": "22%",
+                    "t": "5%"
+                },
+                "title": "Iris Proof of Concept",
+                "description": "Assisted Dr. Mihai Albu in a time sensitive research project. We created an application using JavaScript and PHP that partners with AI to spot potholes in road images. Data is extracted from the image and used to generate a csv report which geolocates potholes and describes their features. Location data from the report is parsed and interactively displayed on a bing web map for easier indetification. The prototype was devleoped with JS and PHP.",
+                "url": "",
+                "urlType": "Live",
+                "repo": ""
+            }]      
+        }  
+    ]
+}
