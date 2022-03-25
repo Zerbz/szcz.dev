@@ -32,19 +32,21 @@ export default function Title() {
           spacing={{ base: 8, md: 14 }}
           py={{ base: 20, md: 36 }}
           >
-          <Heading
-            fontWeight={200}
-            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-            fontFamily={'heading'}
-            lineHeight={'180%'}>
-            <Typist cursor={cursorProps} onTypingDone={complete}>
-              <Text as={'span'}>Matt </Text>
-              <Text as={'span'} color={'red.400'}>Szcz</Text>.dev
-              <Typist.Backspace count={4} delay={500} />
-              <Text as={'span'}>erba</Text><br/>
-              <Text as={'span'} color={'red.400'}>Full Stack</Text> Dev<Text as={'span'} color={'red.400'}>eloper</Text>
-            </Typist>
-          </Heading>
+          <Box h={"200px"}>
+            <Heading
+              fontWeight={200}
+              fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+              fontFamily={'heading'}
+              lineHeight={'180%'}>
+              <Typist cursor={cursorProps} onTypingDone={complete}>
+                <Text as={'span'}>Matt </Text>
+                <Text as={'span'} color={'red.400'}>Szcz</Text>.dev
+                <Typist.Backspace count={4} delay={500} />
+                <Text as={'span'}>erba</Text><br/>
+                <Text as={'span'} color={'red.400'}>Full Stack</Text> Dev<Text as={'span'} color={'red.400'}>eloper</Text>
+              </Typist>
+            </Heading>
+          </Box>
           <br/>
           <br/>  
           <Box opacity={visibility} left={'50%'} mt={{ sm: "50px", xl: "100px" }} className="animation">
@@ -55,11 +57,10 @@ export default function Title() {
             </div>
           </Box>
           </Stack>
-          <Divider />   
-          <br/>
-          <br/>
-          <br/>
       </Container>
+      <Divider/>   
+      <br/>
+      <br/>  
     </>
   );
 }

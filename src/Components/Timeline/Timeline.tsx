@@ -4,9 +4,13 @@ import Experience from "../Experience/Experience"
 import {Waypoint as Waypoint} from 'react-waypoint';
 import { MdWork } from 'react-icons/md'; 
 import { IoMdSchool } from 'react-icons/io'; 
+import { HiOutlineCursorClick } from 'react-icons/hi'; 
+import { GiClick } from 'react-icons/gi'; 
 import { useState, useEffect } from 'react';
+import { useMediaQuery } from "@chakra-ui/react"
 
 export default function Timeline() {
+  const [isMobile] = useMediaQuery("(max-width: 768px)")
   const { nextStep, prevStep, activeStep, setStep } = useSteps({
     initialStep: 0,
   })
@@ -39,8 +43,7 @@ export default function Timeline() {
         <br/>
         <br/>
         <br/>
-        <Container maxW='xl' centerContent>
-   
+        <Container maxW='xl'>
         <VStack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
         <Divider
           width={{ sm: "80%", xl: "55%" }}
@@ -61,7 +64,7 @@ export default function Timeline() {
           <br/>
           <br/>
           <br/>
-          <Steps orientation="vertical" activeStep={activeStep} onClickStep={(e)=>{setStep(e)}} checkIcon={(activeStep) % 2 === 0 ? MdWork : IoMdSchool } colorScheme={'red'}> 
+          <Steps orientation="vertical" activeStep={activeStep} onClickStep={(e)=>{setStep(e)}} checkIcon={isMobile ? GiClick : HiOutlineCursorClick} colorScheme={'red'}> 
               {data.map(({ title }, index) => (                   
                   <Step width="100%" label={title} key={title} icon={(index + 1) % 2 === 0 ? IoMdSchool : MdWork}>            
                       <Box pos='relative' right={(index + 1) % 2 === 0 ? "102%" : ""} height='45%'>             

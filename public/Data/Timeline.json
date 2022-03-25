@@ -2,9 +2,9 @@
     "Timeline": [{
             "img": {
                 "src": "/files/Canada_150.png",
-                "b": "250px",
-                "h": "200px",
-                "w": "200px",
+                "b": "200px",
+                "h": "175px",
+                "w": "175px",
                 "l": "22%",
                 "t": ""
             },
@@ -44,7 +44,7 @@
                         "icon": "SiAzuredevops"
                     }
                 ],
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "description": "I currently work for Environment & Climate Change Canada as full stack dev. Most of my time is spent developing regulatory applications that retrieve emissions data from companies operating in Canada. I started here as a co-op student in 2018, and began a full time position in 2020 after graduating from Mohawk College. ",
             "projects": "#eccc"
         },{
             "img": {
@@ -55,10 +55,10 @@
                 "l": "5%"
             },
             "title": "McMaster University",
-            "detail": "BTech - Software Engineering Technology. 3.8/4 GPA",
-            "dates": "2020 - Present, Expected Graduation 2024",
+            "detail": "BTech - Software Engineering Technology",
+            "dates": "2020 - 2024, 3.8/4 GPA",
             "tools":[],
-            "description": " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "description": "I enrolled at McMaster University in May 2020 to further my knowledge and improve as a developer. The program is designed to accomodate students who work full time and as such, classes are offered in the evenings and weekends. I'm currently half way through the program and expect to graduate in April 2024.",
             "projects": "#mac"
         },
         {
@@ -97,7 +97,7 @@
                     "icon": "SiJest"
                 }
             ],
-            "description": " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "description": "Icarus Medical was a start-up company that was founded by myself and 2 other students from the University of Waterloo, and University of Toronto. Our aim was to improve patitent care by reducing specialist wait times in Canada. The product received excellent feedback and won over 10k from various pitch competitions.",
             "projects": "#icarus"
         },
         {
@@ -148,7 +148,7 @@
                     "icon": "SiNodeDotJs"
                 }
             ],
-            "description": " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "description": "I enrolled at Mohawk college in January of 2017 to pursue my passion for software development. The program exposed me to a wide variety of technologies and provided me with several opportunities to hone my skills outside of the classroom. I graduated in early 2020 with honours.",
             "projects": "#mohawk"
         }
     ]

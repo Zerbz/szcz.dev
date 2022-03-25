@@ -1,9 +1,11 @@
 import Project from "./Project"
 import {VStack, Divider, Heading, Box} from "@chakra-ui/react"
 import { useState, useEffect } from 'react';
+import { useMediaQuery } from "@chakra-ui/react"
 
 export default function Projects() {
     const [data, setData] = useState([]);
+    const [isMobile] = useMediaQuery("(max-width: 768px)") 
 
     const getData=()=>{
       fetch('/Data/Projects.json',{
@@ -28,13 +30,15 @@ export default function Projects() {
 
     return (
         <div id="Projects">
+              <br/>
+              <br/>
             <VStack>
                 <br/>
                 <br/>
                 <br/>
                 <br/>
                 <Divider
-                width={{ sm: "70%", xl: "35%" }}
+                width={isMobile ? "65%" : "30%"}
                 mt="15px"
                 mb="10px"
                 bg="#f56565"
@@ -42,7 +46,7 @@ export default function Projects() {
                 />
                 <Heading textAlign={'center'} size="2xl">Projects</Heading>
                 <Divider
-                width={{ sm: "70%", xl: "35%" }}
+                width={isMobile ? "65%" : "30%"}
                 mt="15px"
                 mb="10px"
                 bg="#f56565"

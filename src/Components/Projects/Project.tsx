@@ -15,12 +15,14 @@ import {
   Tooltip
 } from '@chakra-ui/react';
 import { Collapse } from "@chakra-ui/transition"
-
 import { useState } from 'react';
+import { useMediaQuery } from "@chakra-ui/react"
 
 export default function Project({Data}) {
-  const [open, setOpen] = useState(true); //Data.organization === "Environment & Climate Change Canada" ? true : false
+  const [isMobile] = useMediaQuery("(max-width: 768px)")
 
+  const [open, setOpen] = useState(isMobile ? false : true); //Data.organization === "Environment & Climate Change Canada" ? true : false
+  const bg = useColorModeValue('#f7fafc', '#232323')
   function toggleOpen(){
     open ?  setOpen(false) : setOpen(true);
   }
@@ -29,7 +31,7 @@ export default function Project({Data}) {
     <div id={Data.hashlink}>
        <Button onClick={toggleOpen}>{Data.organization} {open ? "-" : "+"}</Button>
         <Collapse in={open} animateOpacity>
-          <HStack>
+          <HStack pt={'1%'} >
            <Wrap>
            {Data.projects.map((project, index) => (
              <WrapItem key={index}>       
@@ -40,7 +42,8 @@ export default function Project({Data}) {
                  boxShadow={'2xl'}
                  rounded={'md'}
                  p={6}
-                 overflow={'hidden'}>
+                 overflow={'hidden'}
+                 bg={bg}>
                  <Box
                    h={project.img.b}
                    pos={'relative'}>
@@ -52,12 +55,13 @@ export default function Project({Data}) {
                  </Box>
                  <Stack>
                    <Heading
+                     color={"#f56565"}
                      fontSize={'md'}
                      fontFamily={'body'}
                      textAlign={'left'}>
                      {project.title}
                    </Heading>
-                   <Text fontFamily={'body'} color={'gray.500'} textAlign={'left'}>
+                   <Text fontFamily={'body'} textAlign={'left'}>
                      {project.description}
                    </Text>
                    <HStack>
@@ -71,7 +75,7 @@ export default function Project({Data}) {
                     <Link href={project.url} isExternal>
                       <Tooltip hasArrow label={project.url === "" ? "Not publicly available" : ""} shouldWrapChildren mt='3'>
                         <Button isDisabled={project.url === ""}>
-                          Live
+                          {project.urlType}
                         </Button>
                       </Tooltip>
                     </Link>                    

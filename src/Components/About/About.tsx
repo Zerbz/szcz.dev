@@ -2,7 +2,7 @@ import {
     Box,
     Container,
     Heading,
-    SimpleGrid,
+    Tooltip,
     Button,
     HStack,
     VStack,
@@ -14,14 +14,16 @@ import {
   } from '@chakra-ui/react';
   import { SiGithub, SiLinkedin, SiDevDotTo } from 'react-icons/si';
   import { DownloadIcon } from '@chakra-ui/icons';
+  import { useMediaQuery } from "@chakra-ui/react";
   
   export default function About() {
+    const [isMobile] = useMediaQuery("(max-width: 768px)") 
     return (
     <div id="About">
         <Box>
             <VStack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
             <Divider
-                width={{ sm: "70%", xl: "35%" }}
+                width={isMobile ? "50%" : "35%"}
                 mt="15px"
                 mb="10px"
                 bg="#f56565"
@@ -29,7 +31,7 @@ import {
                 />
             <Heading textAlign={'center'} size="2xl">About</Heading>
             <Divider
-            width={{ sm: "70%", xl: "35%" }}
+              width={isMobile ? "50%" : "35%"}
               mt="15px"
               mb="10px"
               bg="#f56565"
@@ -40,9 +42,10 @@ import {
             <br/>
             <Image
               borderRadius='full'
+              objectFit='cover'
               boxSize='150px'
-              src='/files/brenda.png'
-              alt='Brenda'
+              src='/files/ellie.png'
+              alt='Ellie'
             />
             <HStack align={'top'}>
                     <Box color={'black.400'} px={15}>
@@ -72,36 +75,39 @@ import {
                           isRound
                         />
                       </Link>
-                      <Link p={3} href="https://dev.to/szcz" isExternal>
-                        <IconButton
-                          aria-label="dev.to"
-                          variant="ghost"
-                          size="lg"
-                          icon={<SiDevDotTo size="35px" />}
-                          _hover={{
-                            bg: 'red.500',
-                            color: useColorModeValue('white', 'black'),
-                          }}
-                          isRound
-                        />
-                      </Link>
+                      <Tooltip hasArrow label={"First article coming soon!"} shouldWrapChildren mt='3'>
+                        <Link p={3} href="https://dev.to/szcz" isExternal>
+                          <IconButton
+                            aria-label="dev.to"
+                            disabled = {true}
+                            variant="ghost"
+                            size="lg"
+                            icon={<SiDevDotTo size="35px" />}
+                            _hover={{
+                              bg: 'red.500',
+                              color: useColorModeValue('white', 'black'),
+                            }}
+                            isRound
+                          />
+                        </Link>
+                      </Tooltip>
                     </Box>
                 </HStack>
             <Link href="/files/MattSzczerbaResumeWeb.pdf" isExternal download><Button><DownloadIcon mr="5px"/>Resume</Button></Link>
-            <Container>
-              I'm Brenda, and I'm cute, but I'm picky as shit. Meow Meow Meow Meow Meow
-              Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow 
-              Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow 
+            </VStack>    
+            </Box>
+            <Container fontSize={"xl"} pt={"3%"} maxW={'3xl'}  textAlign={'left'}>
+              Hello! Thanks for stopping by! My name's Matt and I'm a full stack developer currently living in Kitchener Ontario. As cliche
+              as it probably sounds, I love tackling difficult problems and creating apps that set the bar higher. I guess I enjoy disruption.....
+              oh the cat? Yah I'll shut up, her name's Ellie and she's unbelievably sweet.
             </Container>
             <br/>
             <br/>
+
             <br/>
             <br/>
-            <br/>
-            <br/>
-            <Divider/>
-            </VStack>                    
-        </Box>
+            <Divider/>                
+
       </div>
     );
   }

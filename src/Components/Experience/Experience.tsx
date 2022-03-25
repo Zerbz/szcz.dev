@@ -41,11 +41,12 @@ const Mohawk = [SiPython,SiCsharp, SiDotNet, SiJava, SiReact, SiVueDotJs, SiSwif
 
 export default function Experience({Data}) {
   const [icons, setIcons] = useState(ECCC);
+  const bg = useColorModeValue('#f7fafc', '#232323')
+  const icarusSrc = useColorModeValue('/files/icarus.png','/files/icarus-light.png')
+
   useEffect(()=>{
     setIcons(getIcons(Data.title));
   },[])
-
-
 
   function getIcons(title){
     switch(title){
@@ -68,12 +69,13 @@ export default function Experience({Data}) {
         boxShadow={'2xl'}
         rounded={'md'}
         p={6}
-        overflow={'hidden'}>
+        overflow={'hidden'}
+        bg={bg}>
         <Box
           h={Data.img.b}
           pos={'relative'}>
         <Center>
-          <Image mt={Data.img.t} htmlWidth={Data.img.w} htmlHeight={Data.img.h} src={Data.img.src} alt="Canada"/>
+          <Image mt={Data.img.t} htmlWidth={Data.img.w} htmlHeight={Data.img.h} src={Data.title === "Icarus Medical" ? icarusSrc : Data.img.src} alt="Canada"/>
         </Center>
         </Box>
         <Stack>
@@ -113,7 +115,7 @@ export default function Experience({Data}) {
             </Wrap>
           </Center>
           </Box>
-          <Text fontFamily={'body'} color={'gray.500'} textAlign={'left'}>
+          <Text fontFamily={'body'} textAlign={'left'}>
             {Data.description}
           </Text>
           <HashLink hidden={Data.projects === "#mac"} smooth to={Data.projects} key={Data.projects}>        
