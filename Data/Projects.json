@@ -87,7 +87,7 @@
                         "t": ""
                     },
                     "title": "LUIS",
-                    "description": "Developed a chat bot prototype as part of a department initiative to incorporate machine learning and AI into current and future projects. The prototype was created using Microsoft’s LUIS AI and Azure Web App Bot frameworks. LUIS was integrated with the CAM project due to its use an Open Gov data set.",
+                    "description": "Developed a chat bot prototype as part of a department initiative to incorporate machine learning and AI into current and future projects. The prototype was created using Microsoft’s LUIS AI and Azure Web App Bot frameworks. LUIS was integrated with the CAM project due to its use of an Open Gov data set.",
                     "url": "https://open.canada.ca/data/en/dataset/ee421d50-dffd-41fb-976c-5bbfec04b2dd",
                     "urlType": "Data set",
                     "repo": ""
