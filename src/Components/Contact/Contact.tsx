@@ -18,14 +18,15 @@ import {
     HStack
   } from '@chakra-ui/react';
   import { BsPerson } from 'react-icons/bs'; 
-  import { SiDevDotTo, SiGithub, SiLinkedin, SiTwitter } from 'react-icons/si';
+  import { SiDevDotTo, SiGithub, SiLinkedin } from 'react-icons/si';
   import { MdEmail } from 'react-icons/md';
   import { useState } from 'react';
   import emailjs from 'emailjs-com';
 
-  const SERVICE_ID = "service_dkdjg63";
-  const TEMPLATE_ID = "template_rjlbwup";
-  const USER_ID = "rKrh8Hw3yBAz6QM8h";
+  // Yayaya, env is embedded into the build, I know. If you really want to be a leet hacker, go for it and enjoy my 200 free monthly emails.
+  const SERVICE_ID: string = (process.env.REACT_APP_SERVICE_ID as string);
+  const TEMPLATE_ID: string = (process.env.REACT_APP_TEMPLATE_ID  as string);
+  const USER_ID: string = (process.env.REACT_APP_USER_ID as string);
 
   const confetti = {
     light: {
@@ -59,16 +60,16 @@ import {
     function sendEmail(){
       setSending(true);
       emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
-      .then(function(response) {
+      .then(function() {
         setSending(false);
         setSent(true);
-      }, function(error) {
+      }, function() {
           setSending(false);
       });
     }
 
     return (
-    <div id = "Contact">    
+    <Box id = "Contact">    
       <Flex
         align="center"
         justify="center"
@@ -111,8 +112,7 @@ import {
                     onClick={onCopy}
                     isRound
                   />
-                </Tooltip>
-                
+                </Tooltip>            
                 <Link p={3} href="https://www.linkedin.com/in/mszcz/" isExternal>
                   <IconButton
                     aria-label="linkedin"
@@ -126,7 +126,6 @@ import {
                     isRound
                   />
                 </Link>
-
                 <Link p={3} href="https://github.com/Zerbz" isExternal>
                   <IconButton
                     aria-label="github"
@@ -141,26 +140,21 @@ import {
                     isRound
                   />
                 </Link>
-                
-                <Tooltip hasArrow label={"First article coming soon!"} shouldWrapChildren mt='3'>
-                  <Link p={3} href="https://dev.to/szcz" isExternal >
-                    <IconButton
-                      aria-label="dev.to"
-                      variant="ghost"
-                      size="lg"
-                      disabled={true}
-                      icon={<SiDevDotTo size="28px" />}
-                    
-                      _hover={{
-                        bg: '#f56565',
-                        color: useColorModeValue('white', 'gray.700'),
-                      }}
-                      isRound
-                    />
-                  </Link>
-                </Tooltip>
+                <Link p={3} href="https://dev.to/szcz" isExternal >
+                  <IconButton
+                    aria-label="dev.to"
+                    variant="ghost"
+                    size="lg"
+                    icon={<SiDevDotTo size="28px" />}
+                  
+                    _hover={{
+                      bg: '#f56565',
+                      color: useColorModeValue('white', 'gray.700'),
+                    }}
+                    isRound
+                  />
+                </Link>
               </HStack>
-
               <Box
                 bg={useColorModeValue('white', '#303030')}
                 borderRadius="lg"
@@ -207,6 +201,6 @@ import {
           </Box>
         </Box>
       </Flex>
-      </div>
+      </Box>
     );
   }

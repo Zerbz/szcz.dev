@@ -4,7 +4,7 @@
         "hashlink": "eccc",
         "projects":[{
                     "img":{
-                        "src": "/files/ATM.png",
+                        "src": "/files/atm.png",
                         "b": "175px",
                         "h": "350px",
                         "w": "350px",
@@ -49,7 +49,7 @@
                 },
                 {
                     "img":{
-                        "src": "/files/SAR.png",
+                        "src": "/files/sar.png",
                         "b": "175px",
                         "h": "250px",
                         "w": "250px",
@@ -64,7 +64,7 @@
                 }, 
                 {
                     "img":{
-                        "src": "/files/CAM.png",
+                        "src": "/files/cam.png",
                         "b": "175px",
                         "h": "250px",
                         "w": "250px",
@@ -79,7 +79,7 @@
                 },               
                 {
                     "img":{
-                        "src": "/files/LUIS.png",
+                        "src": "/files/luis.png",
                         "b": "175px",
                         "h": "350px",
                         "w": "350px",
@@ -87,7 +87,7 @@
                         "t": ""
                     },
                     "title": "LUIS",
-                    "description": "Developed a chat bot prototype as part of a department initiative to incorporate machine learning and AI into current and future projects. The prototype was created using Microsoft’s LUIS AI and Azure Web App Bot frameworks. LUIS was integrated with the CAM project due to its use an Open Gov data set.",
+                    "description": "Developed a chat bot prototype as part of a department initiative to incorporate machine learning and AI into current and future projects. The prototype was created using Microsoft’s LUIS AI and Azure Web App Bot frameworks. LUIS was integrated with the CAM project due to its use of an Open Gov data set.",
                     "url": "https://open.canada.ca/data/en/dataset/ee421d50-dffd-41fb-976c-5bbfec04b2dd",
                     "urlType": "Data set",
                     "repo": ""
@@ -118,7 +118,7 @@
             "hashlink": "mohawk",
             "projects":[{
                 "img":{
-                    "src": "/files/fleet-portal.png",
+                    "src": "/files/fleetportal.png",
                     "b": "200px",
                     "h": "350px",
                     "w": "350px",

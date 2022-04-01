@@ -1,35 +1,21 @@
-import {
-  Box,
-  Button,
-  Center,
-  Heading,
-  Text,
-  Stack,
-  useColorModeValue,
-  Wrap,
-  WrapItem,
-  Spacer,
-  HStack,
-  Image,
-  Link,
-  Tooltip
-} from '@chakra-ui/react';
+import { Box, Button, Center, Heading, Text, Stack, useColorModeValue, Wrap, WrapItem, Spacer, HStack, Image, Link, Tooltip } from '@chakra-ui/react';
 import { Collapse } from "@chakra-ui/transition"
 import { useState } from 'react';
 import { useMediaQuery } from "@chakra-ui/react"
 
 export default function Project({Data}) {
+  
   const [isMobile] = useMediaQuery("(max-width: 768px)")
-
-  const [open, setOpen] = useState(isMobile ? false : true); //Data.organization === "Environment & Climate Change Canada" ? true : false
+  const [open, setOpen] = useState(isMobile ? false : true);
   const bg = useColorModeValue('#f7fafc', '#232323')
+  
   function toggleOpen(){
     open ?  setOpen(false) : setOpen(true);
   }
 
   return (
-    <div id={Data.hashlink}>
-       <Button onClick={toggleOpen}>{Data.organization} {open ? "-" : "+"}</Button>
+    <Box id={Data.hashlink}>
+       <Button onClick={toggleOpen}>{isMobile && Data.organization === "Environment & Climate Change Canada" ? "ECCC" : Data.organization} {open ? "-" : "+"}</Button>
         <Collapse in={open} animateOpacity>
           <HStack pt={'1%'} >
            <Wrap>
@@ -89,6 +75,6 @@ export default function Project({Data}) {
            </Wrap>
           </HStack>
         </Collapse>
-    </div> 
+    </Box> 
   );
 }

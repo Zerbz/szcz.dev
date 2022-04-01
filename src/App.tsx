@@ -11,7 +11,7 @@ export const App = () => (
     <ChakraContainer
       maxW='6xl'
       paddingX={8}>
-      {process.env.NODE_ENV == "production" ?  <Maintanence/> : <Home/>}
+      {process.env.NODE_ENV == "production" ?  <Home/> : <Home/>}
     </ChakraContainer>
   </ChakraProvider>
 )

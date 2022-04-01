@@ -71,12 +71,10 @@ export default function Experience({Data}) {
         p={6}
         overflow={'hidden'}
         bg={bg}>
-        <Box
-          h={Data.img.b}
-          pos={'relative'}>
-        <Center>
-          <Image mt={Data.img.t} htmlWidth={Data.img.w} htmlHeight={Data.img.h} src={Data.title === "Icarus Medical" ? icarusSrc : Data.img.src} alt="Canada"/>
-        </Center>
+        <Box h={Data.img.b} pos={'relative'}>
+          <Center>
+            <Image mt={Data.img.t} htmlWidth={Data.img.w} htmlHeight={Data.img.h} src={Data.title === "Icarus Medical" ? icarusSrc : Data.img.src} alt="Canada"/>
+          </Center>
         </Box>
         <Stack>
           <Heading

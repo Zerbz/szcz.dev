@@ -37,7 +37,7 @@ const CustomSteps = {
 //           stepContainer:{
 //             ...StepsStyleConfig.baseStyle(props).stepContainer,
 //             position:'relative',
-//             left:'48%'
+//             left:'148%'
 //           },
 //           connector:{
 //             ...StepsStyleConfig.baseStyle(props).connector,
@@ -69,7 +69,7 @@ const theme = extendTheme({
         borderBottom: '5px solid #f56565',
         borderRight: '5px solid #f56565',
         animation: 'animate 2s infinite',
-        marginLeft: '50%',
+        marginLeft: '47.8%',
       },
       '@keyframes animate': {
         '0%': {
