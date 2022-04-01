@@ -2,54 +2,14 @@ import { StepsStyleConfig } from 'chakra-ui-steps';
 import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
 import { mode } from "@chakra-ui/theme-tools";
 
+// 2. Add your color mode config
 const config: ThemeConfig = {
   initialColorMode: 'dark',
   useSystemColorMode: true,
 }
 
-const CustomSteps = {
-  ...StepsStyleConfig,
-  baseStyle: props => {
-    return {
-      ...StepsStyleConfig.baseStyle(props),
-      stepContainer:{
-        ...StepsStyleConfig.baseStyle(props).stepContainer,
-        position:'relative',
-        left:'48%'
-      },
-      connector:{
-        ...StepsStyleConfig.baseStyle(props).connector,
-        position:'relative',
-        left:'48%'
-      },
-    };
-  },
-};
-
-// const CustomSteps = {
-//   ...StepsStyleConfig,
-//   variants:{
-//     alternate:{
-//       baseStyle: props => {
-//         return {
-//           ...StepsStyleConfig.baseStyle(props),
-//           stepContainer:{
-//             ...StepsStyleConfig.baseStyle(props).stepContainer,
-//             position:'relative',
-//             left:'148%'
-//           },
-//           connector:{
-//             ...StepsStyleConfig.baseStyle(props).connector,
-//             position:'relative',
-//             left:'48%'
-//           },
-//         };
-//       },
-//     }
-//   },
-// };
-
-const theme = extendTheme({ 
+// 3. extend the theme
+const mobiletheme = extendTheme({ 
   config,
   styles:{
     global: (props)=> ({
@@ -67,7 +27,7 @@ const theme = extendTheme({
         borderBottom: '5px solid #f56565',
         borderRight: '5px solid #f56565',
         animation: 'animate 2s infinite',
-        marginLeft: '47.8%',
+        marginLeft: '50%',
       },
       '@keyframes animate': {
         '0%': {
@@ -103,9 +63,6 @@ const theme = extendTheme({
     heading: 'Bungee, sans-serif',
     body: 'Fira Code, sans-serif',
   },
-  components:{
-    Steps: CustomSteps,
-  },
  })
 
-export default theme
+export default mobiletheme
