@@ -2,7 +2,6 @@ import { StepsStyleConfig } from 'chakra-ui-steps';
 import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
 import { mode } from "@chakra-ui/theme-tools";
 
-// 2. Add your color mode config
 const config: ThemeConfig = {
   initialColorMode: 'dark',
   useSystemColorMode: true,
@@ -50,7 +49,6 @@ const CustomSteps = {
 //   },
 // };
 
-// 3. extend the theme
 const theme = extendTheme({ 
   config,
   styles:{
