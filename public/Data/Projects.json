@@ -110,7 +110,7 @@
                 "description": "Icarus Medical is a web application created to improve patient care by reducing specialist wait times in Canada. The front end was created with React / Ant Design and the backend API was developed using Python and Flask.",
                 "url": "https://www.icarusmed.ca/",
                 "urlType": "Live",
-                "repo": "https://github.com/Zerbz/icarus-frontend"
+                "repo": "https://github.com/szczz/icarus-frontend"
             }]
         },
         {
@@ -129,7 +129,7 @@
                 "description": "Fleet portal is a Laravel application designed for drivers and dispatchers in the transportation industry. Its functionality includes fleet management, load tracking, driver tracking, file uploads, email notifications and route editing. I spent two years in the industry working as a dispatcher and always wished that a product like this was available to me. I brought this idea to life as my final capstone project at Mohawk College.",
                 "url": "",
                 "urlType": "Live",
-                "repo": "https://github.com/Zerbz/FleetPortal"
+                "repo": "https://github.com/szczz/FleetPortal"
             },
             {
                 "img":{

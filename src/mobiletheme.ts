@@ -2,13 +2,26 @@ import { StepsStyleConfig } from 'chakra-ui-steps';
 import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
 import { mode } from "@chakra-ui/theme-tools";
 
-// 2. Add your color mode config
 const config: ThemeConfig = {
   initialColorMode: 'dark',
   useSystemColorMode: true,
 }
 
-// 3. extend the theme
+const CustomSteps = {
+  ...StepsStyleConfig,
+  baseStyle: props => {
+    return {
+      ...StepsStyleConfig.baseStyle(props),
+      stepContainer:{
+        ...StepsStyleConfig.baseStyle(props).stepContainer,
+      },
+      connector:{
+        ...StepsStyleConfig.baseStyle(props).connector,
+      },
+    };
+  },
+};
+
 const mobiletheme = extendTheme({ 
   config,
   styles:{
@@ -26,8 +39,7 @@ const mobiletheme = extendTheme({
         height: '20px',
         borderBottom: '5px solid #f56565',
         borderRight: '5px solid #f56565',
-        animation: 'animate 2s infinite',
-        marginLeft: '50%',
+        animation: 'animate 2s infinite'
       },
       '@keyframes animate': {
         '0%': {
@@ -62,6 +74,9 @@ const mobiletheme = extendTheme({
   fonts: {
     heading: 'Bungee, sans-serif',
     body: 'Fira Code, sans-serif',
+  },
+  components:{
+    Steps: CustomSteps,
   },
  })
 

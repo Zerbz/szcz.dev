@@ -34,6 +34,7 @@ import {
 } from "react-icons/si";
 import { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
+import { useMediaQuery } from "@chakra-ui/react";
 
 const ECCC = [SiCsharp,SiDotNet,SiVueDotJs, SiDocker, SiElasticstack, SiMicrosoftsqlserver, SiAzurepipelines, SiAzuredevops];
 const Icarus = [SiReact,SiPython,SiNodeDotJs, SiFlask, SiPostgresql, SiJest]
@@ -43,6 +44,7 @@ export default function Experience({Data}) {
   const [icons, setIcons] = useState(ECCC);
   const bg = useColorModeValue('#f7fafc', '#232323')
   const icarusSrc = useColorModeValue('/files/icarus.png','/files/icarus-light.png')
+  const [isMobile] = useMediaQuery("(max-width: 768px)")
 
   useEffect(()=>{
     setIcons(getIcons(Data.title));
@@ -117,7 +119,7 @@ export default function Experience({Data}) {
             {Data.description}
           </Text>
           <HashLink hidden={Data.projects === "#mac"} smooth to={Data.projects} key={Data.projects}>        
-              <Button  w={'350px'}>
+              <Button  w={isMobile ? '150px' : '350px'}>
                Projects 
               </Button>
           </HashLink>

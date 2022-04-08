@@ -26,7 +26,7 @@ export default function Footer() {
               }}
             />
           </Link>
-          <Link p={3} href="https://github.com/Zerbz" isExternal>
+          <Link p={3} href="https://github.com/szczz" isExternal>
             <IconButton
               aria-label="github"
               variant="ghost"

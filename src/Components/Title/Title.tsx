@@ -13,6 +13,7 @@ const cursorProps = {
 export default function Title() {
   const [visibility, setVisibility] = useState(0);
   const [isMobile] = useMediaQuery("(max-width: 768px)") 
+
   function complete(){
     setVisibility(100);
   }
@@ -38,7 +39,7 @@ export default function Title() {
             </Box>
             <Flex pt={"8%"}/>  
             <Box opacity={visibility} mt={{ sm: "50px", xl: "100px" }} className="animation">
-              <Box className="arrow">
+              <Box ml={isMobile ? "46.6%" : "49%"} className="arrow">
                 <HashLink smooth to={"#About"}>
                         <span/>
                 </HashLink>          
