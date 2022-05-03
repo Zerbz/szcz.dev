@@ -28,6 +28,7 @@ const CustomSteps = {
 
 const theme = extendTheme({ 
   config,
+  shadows: { outline: '0 0 0 3px #f56565' },
   styles:{
     global: (props)=> ({
       '.Typist .Cursor': {

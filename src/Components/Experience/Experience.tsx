@@ -73,7 +73,7 @@ export default function Experience({Data}) {
         p={6}
         overflow={'hidden'}
         bg={bg}>
-        <Box h={Data.img.b} pos={'relative'}>
+        <Box h={isMobile ? Data.img.m : Data.img.b} pos={'relative'}>
           <Center>
             <Image mt={Data.img.t} htmlWidth={Data.img.w} htmlHeight={Data.img.h} src={Data.title === "Icarus Medical" ? icarusSrc : Data.img.src} alt="Canada"/>
           </Center>
@@ -100,7 +100,7 @@ export default function Experience({Data}) {
             textAlign={'left'}>
             {Data.dates}
           </Heading>
-          <Box p={2} pt={25} >
+          <Box p={2} pt={isMobile ? 0 : 25} >
           <Center>
             <Wrap fontSize={'3xl'}>
               {Data.tools.map((tool, index) => (

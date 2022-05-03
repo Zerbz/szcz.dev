@@ -43,7 +43,7 @@ export default function Projects() {
         ))}   
       </VStack>   
       <Flex pt={"8%"}/>
-      <Divider w={isMobile ? '' : '5xl'}/>
+      <Divider w={isMobile ? '' : '5.5xl'}/>
     </Box>
   )
 }

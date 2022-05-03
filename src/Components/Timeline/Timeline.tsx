@@ -37,7 +37,7 @@ export default function Timeline() {
 
   useEffect(()=>{
     if(isStandard){
-      setScrollModifier(1)
+      setScrollModifier(1.1)
       setScrollVal(750)
     }
     getData()
@@ -56,7 +56,7 @@ export default function Timeline() {
               {data.map(({ title }, index) => (                   
                   <Step width="100%" label={isMobile && title === "Environment & Climate Change Canada" ? "ECCC" : title} key={title} icon={(index + 1) % 2 === 0 ? IoMdSchool : MdWork}>            
                       <Box pos='relative' right={isMobile ? "" :(index + 1) % 2 === 0 ? "102%" : ""} height='45%'>             
-                          <Waypoint onEnter={isMobile ? () => {} : activeStep === data.length - 1 ? ()=>{} : nextStep} bottomOffset={(index + 1) % 2 === 0 ? index + scrollModifier * scrollVal : "90%"} fireOnRapidScroll={false} /> 
+                          <Waypoint onEnter={isMobile ? () => {} : activeStep === data.length - 1 ? ()=>{} : nextStep} bottomOffset={(index + 1) % 2 === 0 ? index + scrollModifier * scrollVal : "90%"}/> 
                           <Experience Data={data[index]}/>    
                       </Box>   
                   </Step>
@@ -65,7 +65,7 @@ export default function Timeline() {
           </VStack>
       </Container>
       <Flex pt={"8%"} />
-      <Divider w={isMobile ? '' : '5xl'}/>
+      <Divider w={isMobile ? '' : '5.5xl'}/>
     </Box>
   )
 }
