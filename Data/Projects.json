@@ -95,6 +95,25 @@
             ]
         },
         {
+            "organization": "McMaster University",
+            "hashlink": "mcmaster",
+            "projects":[{
+                "img":{
+                    "src": "/files/sentilert.png",
+                    "b": "175px",
+                    "h": "350px",
+                    "w": "350px",
+                    "l": "22%",
+                    "t": ""
+                },
+                "title": "Sentilert",
+                "description": "Sentilert is a financial companion tool that tracks stock sentiment over time and notifies users when sentiment exceeds their defined thresholds. It was developed using Python and Redis and uses Twilio to send SMS and Email notifications. Sentilert was developed during a fourth year Software Architecture class and uses the Singleton and Observer design patterns. It is deployed and runs persistently on a Digital Ocean droplet.",
+                "url": "",
+                "urlType": "Live",
+                "repo": "https://github.com/szczz/Sentilert"
+            }]
+        },
+        {
             "organization": "Icarus Medical",
             "hashlink": "icarus",
             "projects":[{
