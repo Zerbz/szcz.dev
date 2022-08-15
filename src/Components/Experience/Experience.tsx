@@ -31,14 +31,18 @@ import {
   SiJava,
   SiSwift,
   SiJest,
+  SiRedis,
+  SiTwilio,
+  SiDigitalocean
 } from "react-icons/si";
 import { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { useMediaQuery } from "@chakra-ui/react";
 
-const ECCC = [SiCsharp,SiDotNet,SiVueDotJs, SiDocker, SiElasticstack, SiMicrosoftsqlserver, SiAzurepipelines, SiAzuredevops];
-const Icarus = [SiReact,SiPython,SiNodeDotJs, SiFlask, SiPostgresql, SiJest]
-const Mohawk = [SiPython,SiCsharp, SiDotNet, SiJava, SiReact, SiVueDotJs, SiSwift, SiLaravel,SiNodeDotJs]
+const ECCC = [SiCsharp,SiDotNet,SiVueDotJs,SiDocker,SiElasticstack,SiMicrosoftsqlserver,SiAzurepipelines,SiAzuredevops];
+const McMaster = [SiPython,SiRedis,SiTwilio,SiDigitalocean,SiCsharp,SiDotNet];
+const Icarus = [SiReact,SiPython,SiNodeDotJs,SiFlask,SiPostgresql,SiJest]
+const Mohawk = [SiPython,SiCsharp,SiDotNet,SiJava,SiReact,SiVueDotJs,SiSwift,SiLaravel,SiNodeDotJs]
 
 export default function Experience({Data}) {
   const [icons, setIcons] = useState(ECCC);
@@ -54,6 +58,8 @@ export default function Experience({Data}) {
     switch(title){
       case "Environment & Climate Change Canada":
         return ECCC;
+      case "McMaster University":
+        return McMaster;
       case "Icarus Medical":
         return Icarus;
       case "Mohawk College":
@@ -118,7 +124,7 @@ export default function Experience({Data}) {
           <Text fontFamily={'body'} textAlign={'left'}>
             {Data.description}
           </Text>
-          <HashLink hidden={Data.projects === "#mac"} smooth to={Data.projects} key={Data.projects}>        
+          <HashLink smooth to={Data.projects} key={Data.projects}>        
               <Button  w={isMobile ? '150px' : '350px'}>
                Projects 
               </Button>
