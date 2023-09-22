@@ -15,7 +15,7 @@
                     "description": "ATM is a research and development project intended to explore Blazor for future use in regulatory applications. The project uses the Blazor Server framework, Ant Design Blazor, C#, and an Azure SQL Server DB to provide an all-in-one application monitoring system. I led a team of 11 students to the project's completion.",
                     "url": "",
                     "urlType": "Live",
-                    "repo": "https://github.com/ATM-GSA/ATM"
+                    "repo": ""
                 },
                 {
                     "img":{

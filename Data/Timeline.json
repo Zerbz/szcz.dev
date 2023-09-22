@@ -50,10 +50,10 @@
         },{
             "img": {
                 "src": "/files/mcmaster.png",
-                "b": "200px",
-                "m": "150px",
-                "h": "150px",
-                "w": "300px",
+                "b": "175px",
+                "m": "125px",
+                "h": "125px",
+                "w": "275px",
                 "l": "5%"
             },
             "title": "McMaster University",
@@ -84,7 +84,7 @@
                     "icon": "SiDotNet"
                 }
             ],
-            "description": "I enrolled at McMaster University in May 2020 to further my knowledge and improve as a developer. The program is designed to accomodate students who work full time, with classes being offered in the evenings and weekends. I'm currently half way through the program and expect to graduate in April 2024.",
+            "description": "I enrolled at McMaster University in May 2020 to further my knowledge and improve as a developer. The program is designed to accomodate students who work full time, with classes being offered in the evenings and weekends. I am nearly complete and expect to graduate in April 2024.",
             "projects": "#mcmaster"
         },
         {
