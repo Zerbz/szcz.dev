@@ -49,7 +49,7 @@
             "projects": "#eccc"
         },{
             "img": {
-                "src": "/files/mcmaster.png",
+                "src": "/files/Mcmaster.png",
                 "b": "175px",
                 "m": "125px",
                 "h": "125px",
@@ -89,7 +89,7 @@
         },
         {
             "img": {
-                "src": "/files/icarus.png",
+                "src": "/files/Icarus.png",
                 "b": "150px",
                 "m": "100px",
                 "h": "150px",
@@ -129,7 +129,7 @@
         },
         {
             "img": {
-                "src": "/files/mohawk.png",
+                "src": "/files/Mohawk.png",
                 "b": "150px",
                 "m": "100px",
                 "h": "150px",
