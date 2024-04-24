@@ -45,7 +45,7 @@
                         "icon": "SiAzuredevops"
                     }
                 ],
-            "description": "I currently work for Environment & Climate Change Canada as full stack dev. Most of my time is spent developing regulatory applications that retrieve emissions data from companies operating in Canada. I started here as a co-op student in 2018, and began a full time position in 2020 after graduating from Mohawk College. ",
+            "description": "I currently work for Environment & Climate Change Canada as a team lead and full stack dev. Most of my time is spent developing open source web mapping platforms and regulatory applications that retrieve emissions data from companies operating in Canada. I started here as a co-op student in 2018, and began a full time position in 2020 after graduating from Mohawk College. ",
             "projects": "#eccc"
         },{
             "img": {
@@ -57,7 +57,7 @@
                 "l": "5%"
             },
             "title": "McMaster University",
-            "detail": "BTech - Software Engineering Technology",
+            "detail": "BTech - Software Engineering Technology - Graduated with distinction",
             "dates": "2020 - 2024, 3.8/4 GPA",
             "tools":[{
                     "tooltip": "Python",
@@ -84,7 +84,7 @@
                     "icon": "SiDotNet"
                 }
             ],
-            "description": "I enrolled at McMaster University in May 2020 to further my knowledge and improve as a developer. The program is designed to accomodate students who work full time, with classes being offered in the evenings and weekends. I am nearly complete and expect to graduate in April 2024.",
+            "description": "I enrolled at McMaster University in 2020 to further my knowledge and improve as a developer. The program is designed to accomodate students who work full time, with classes being offered in the evenings and weekends. I graduated with distinction in 2024.",
             "projects": "#mcmaster"
         },
         {

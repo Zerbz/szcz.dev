@@ -4,6 +4,21 @@
         "hashlink": "eccc",
         "projects":[{
                     "img":{
+                        "src": "/files/Ramp.png",
+                        "b": "175px",
+                        "h": "350px",
+                        "w": "350px",
+                        "l": "22%",
+                        "t": ""
+                    },
+                    "title": "RAMP 4",
+                    "description": "RAMP 4 is an open-source web mapping platform designed to provide an accessible and responsive experience. It utilizes ESRI as its mapping technology and is developed using Vue3, Typescript and Tailwind CSS. RAMP is leveraged by dozens of Government of Canada websites and is WCAG 2.1 AA compliant.",
+                    "url": "https://ramp4-pcar4.github.io/ramp4-pcar4/main/demos/index-samples.html",
+                    "urlType": "Live",
+                    "repo": "https://github.com/ramp4-pcar4/ramp4-pcar4"
+                },
+                {
+                    "img":{
                         "src": "/files/Atm.png",
                         "b": "175px",
                         "h": "350px",
